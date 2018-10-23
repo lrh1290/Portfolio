@@ -1,0 +1,160 @@
+body {
+  color: white;
+}
+
+/* .container {
+  margin-top: 25%;
+  padding: 2%;
+  max-width: 960px;
+}  */
+
+#portTitle {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  margin-top: 30%;
+}
+
+
+h3 {
+  position:relative;
+  color: white;
+  text-align: center;
+  background: grey;
+  width: 100%;
+  bottom: 50%;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+#scroll-animate
+{
+  overflow: hidden;
+}
+
+#scroll-animate-main
+{
+  width: 100%;
+  left: 0;
+  position: fixed;
+}
+
+#heightPage,
+#heightScroll
+{
+  width: 10px;
+  top: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+#heightPage
+{
+  left: 0;
+}
+
+#heightScroll
+{
+  right: 0;
+}
+
+header
+{
+  height: 50%;
+  width: 100%;
+  background: url(https://raw.githubusercontent.com/hudsonmarinho/header-and-footer-parallax-effect/master/assets/images/bg-header.jpg) no-repeat 50% 50%;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+footer
+{
+  width: 100%;
+  background: gray;
+  bottom: 0px;
+  position: relative;
+  z-index: 1;
+}
+
+.content
+{
+  position: relative;
+  height: 100%;
+  z-index: 2;
+}
+
+.wrapper-parallax {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 150px;
+  color: #fff;
+}
+
+
+.content h1{
+  color: #999;
+}
+
+footer h1
+{
+  line-height: 300px;
+}
+
+header,
+footer,
+#scroll-animate-main
+{
+  -webkit-transition-property: all;
+     -moz-transition-property: all;
+      transition-property: all;
+
+  -webkit-transition-duration: 0.4s;
+     -moz-transition-duration: 0.4s;
+      transition-duration: 0.4s;
+
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+     -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+      transition-timing-function: cubic-bezier(0, 0, 0, 1);
+}
+
+.d-block {
+  border-radius: 25%;
+}
+
+.logo {
+  border-radius: 50%; 
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.icon {
+  color: white;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
