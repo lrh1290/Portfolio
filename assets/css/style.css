@@ -347,35 +347,47 @@ img.dblock {
 }
 
 
+.rpg:hover {
+    opacity:0.5;
+}
 
-
-
-.tooltip {
+.rpg:hover::before{
+    content: 'RPG';
     position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
+    top: 60px;
+    left: 50px;
+    width: 30px;
+    height: 20px;
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -60px;
-    
-    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-    opacity: 0;
-    transition: opacity 1s;
+    display: inline-block;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
+.hangman:hover {
+    opacity:0.5;
+}
+
+.hangman:hover::before{
+    content: 'Hangman';
+    position: relative;
+    top: 60px;
+    left: 50px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.trivia:hover {
+    opacity:0.5;
+}
+
+.trivia:hover::before{
+    content: 'Trivia';
+    position: relative;
+    top: 60px;
+    left: 50px;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
 }
