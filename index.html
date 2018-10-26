@@ -141,158 +141,142 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-12">
-          <div id="scroll-animate" style="height: 550px;">
-            <div id="scroll-animate-main" style="height: 550px;">
-              <div class="wrapper-parallax" style="margin-top: 1056px;">
-                <header style="height: 1056px; line-height: 1056px;">
-                  <h1>Lucas Hannan</h1>
-                </header>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <p>My name is Lucas Hannan. I am currently a student at the University of Texas. Today is my last day of school,
-              I am in a group by myself and am very nervous to present. Hope all goes great! 
-            </p>
-          </div>
-        </div>
-      </div>
-    
-      <section class="content">
-        <div class="container">
-          <h2 id="portTitle">Projects</h2>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <a href="https://lrh1290.github.io/Word-Guess-Game/" target="_blank">
-                      <img class="d-block" width="100%" height="275" src="assets/images/hangman.jpg" alt="First slide">
-                    </a>
-                    <h3>Hangman</h3>
-                  </div>
-                  <div class="col-lg-4">
-                    <a href="https://lrh1290.github.io/unit-4-game-master/" target="_blank">
-                      <img class="d-block" width="100%" height="275" src="assets/images/falcon.jpg" alt="First slide">
-                    </a>
-                    <h3>Strategy Game</h3>
-                  </div>
-                  <div class="col-lg-4">
-                    <a href="https://lrh1290.github.io/trivia-game-master/" target="_blank">
-                      <img class="d-block" width="100%" height="275" src="assets/images/question.jpg" alt="First slide">
-                    </a>
-                    <h3>Trivia App</h3>
-                  </div>
+    <div id="body" class="container">
+        <div id="pantryNav"></div>
+        <div class="card bg-secondary">
+            <h2 class="card-header text-center">Pantry Items</h2>
+            <div id="pantry-container" class="card-body">
+                <div class="input-group">
+                    <input id="pantry-input" type="text" class="form-control text-center" aria-label="addPantryItem" placeholder="Add Item Here"
+                        pattern="[A-Za-z]" required>
+                    <input id="add-quantity-input" type="text" class="form-control text-center" aria-label="addItemQuantity" placeholder="Qty."
+                        pattern="[0-9]" required>
+                    <select id="measurement">
+                        <option value="pieces">pcs</option>
+                        <option value="lbs">lbs</option>
+                        <option value="oz">oz</option>
+                        <option value="cups">cups</option>
+                        <option value="grams">grams</option>
+                        <option value="liters">liters</option>
+                        <option value="milliliters">liters</option>
+                    </select>
+                    <br>
                 </div>
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <a href="https://lrh1290.github.io/giftastic-master/" target="_blank">
-                      <img class="d-block" width="100%" height="275" src="assets/images/gif.jpg" alt="First slide">
-                    </a>
-                    <h3>Gif Finder</h3>
-                  </div>
-                  <div class="col-lg-4">
-                    <a href="https://lrh1290.github.io/train-scheduler-master/" target="_blank">
-                      <img class="d-block" width="100%" height="275" src="assets/images/train.jpg" alt="First slide">
-                    </a>
-                    <h3>Scheduler</h3>
-                  </div>
-                  <div class="col-lg-4">
-                    <a href="https://thmiv.github.io/team6project1/" target="_blank">
-                      <img class="d-block" width="100%" height="275" src="assets/images/project.jpg" alt="First slide">
-                    </a>
-                    <h3>Group Project</h3>
-                  </div>
-                </div>
-              </div>
+                <button class="btn btn-outline-light float-left firstButton" type="button" id="addPantryItem">Add Item</button>
+                <button class="btn btn-outline-light float-left" type="button" id="get-fake-recipe">Recipe Suggestions</button>
+                <button class="btn btn-outline-light float-right lastButton" type="button" id="getRecipe">Get Recipe</button>
+                <br>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ITEM</th>
+                            <th scope="col" class="text-center">QUANTITY</th>
+                            <th scope="col" class="text-right">REMOVE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pantryList">
+
+                    </tbody>
+                </table>
             </div>
-          </div>
         </div>
-      </div>
-      </section>
-      <footer>
-        <h1>Github.com/CatonLap</h1>
-      </footer>
-      </div>
-    
-    
-    
-    
-    
-      <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-        crossorigin="anonymous"></script>
-    
-    
-    
-    
-      <script>
-        function scrollFooter(scrollY, heightFooter) {
-          console.log(scrollY);
-          console.log(heightFooter);
-    
-          if (scrollY >= heightFooter) {
-            $('footer').css({
-              'bottom': '0px'
-            });
-    
-          } else {
-            $('footer').css({
-              'bottom': '-' + heightFooter + 'px'
-            });
-    
-          }
-        }
-    
-        $(window).load(function () {
-          var windowHeight = $(window).height(),
-            footerHeight = $('footer').height(),
-            heightDocument = windowHeight + $('.content').height() + $('footer').height() - 20;
-    
-          $('#scroll-animate, #scroll-animate-main').css({
-            'height': heightDocument + 'px'
-          });
-    
-          $('header').css({
-            'height': windowHeight + 'px',
-            'line-height': windowHeight + 'px'
-          });
-    
-    
-          $('.wrapper-parallax').css({
-            'margin-top': windowHeight + 'px'
-          });
-    
-    
-          scrollFooter(window.scrollY, footerHeight);
-    
-          window.onscroll = function () {
-            var scroll = window.scrollY;
-    
-            $('#scroll-animate-main').css({
-              'top': '-' + scroll + 'px'
-            });
-    
-    
-            $('header').css({
-              'background-position-y': 50 - scroll * 100 / heightDocument + '%'
-            });
-    
-    
-            scrollFooter(scroll, footerHeight);
-          };
-        });
-      </script>
-    </body>
-    
+        <!-- RECIPES -->
+        <div id="recipeNav" class="navLocation"></div>
+        <div class="card bg-secondary">
+            <h2 class="card-header text-center" id=recipeTitle>Recipe Book</h2>
+            <div class="card-body">
+                <!-- TABBED NAV ELEMENT  -->
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Recipes by Pantry</a>
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile"
+                            aria-selected="false">Manual Ingredient Search</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">Search for Ingredient Substitute</a>
+                        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#map-tab" role="tab" aria-controls="nav-contact"
+                            aria-selected="false">Search Stores Near You</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <!-- Recipe list by pantry goes in here  -->
+                        <div id="recipes-list" class="d-flex align-content-start justify-content-center flex-wrap">
+                        </div>
+                    </div>
+                    <!-- Manual ingredient entry for recipe search here  -->
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="card bg-secondary padding">
+                            <br>
+                            <div class="input-group">
+                                <input id="recipe-input" type="text" class="form-control text-center" aria-label="addPantryItem" placeholder="Add Single Recipe Ingredient">
+                            </div>
+                            <div id="manual-search-buttons">
+                                <button class="btn btn-outline-light" type="button" id="addRecipeItem">Add Item</button>
+                                <button class="btn btn-outline-light" type="button" id="clearRecipeList">Clear List</button>
+                                <button class="btn btn-outline-light" type="button" id="searchRecipeList">Search for Recipes</button>
+                            </div>
+                            <table id="tcolor" class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">ITEM</th>
+                                        <th scope="col" class="text-right">REMOVE</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="search-ingredients-list"></tbody>
+                            </table>
+                            <div class="d-flex align-content-start justify-content-center flex-wrap" id="show-man-recipe"></div>
+                        </div>
+                    </div>
+                    <!-- Third tab in NAV element  -->
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="card bg-secondary padding">
+                            <br>
+                            <div class="input-group">
+                                <input id="sub-input" type="text" class="form-control text-center" aria-label="addSubItem" placeholder="Add Substitutable Ingredient">
+                                <br>
+                            </div>
+                            <div id="alt-button">
+                                <button class="btn btn-outline-light float-left" type="button" id="searchForSub">Search for Alternates</button>
+                            </div>
+                            <table class="table table-hover">
+                                <tbody id="alternate-ingredients-list">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- map tab -->
+                    <div class="tab-pane fade" id="map-tab" role="tabpanel" aria-labelledby="map-tab">
+                        <!-- Recipe list by pantry goes in here  -->
+                        <div id="mapDiv" style="width:100%;height:400px;background:gray"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SHOPPING LIST -->
+        <div id="shoppingNav" class="navLocation"></div>
+        <div class="card bg-secondary">
+            <h2 class="card-header text-center" id=shoppingTitle>Shopping List</h2>
+            <div class="card-body">
+                <!-- Shopping list goes in this div -->
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">ITEM</th>
+                            <th scope="col" class="text-center">QUANTITY</th>
+                            <th scope="col" class="text-right">REMOVE</th>
+                        </tr>
+                    </thead>
+                    <tbody id="shoppingList">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
 <!-- our own JS -->
 <script src="assets/javascript/app.js"></script>
 <script src="assets/javascript/navbar.js"></script>
