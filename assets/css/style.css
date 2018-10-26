@@ -346,7 +346,7 @@ img.dblock {
     }
 }
 
-.container {
+.hover {
   position: relative;
 }
 
@@ -369,7 +369,7 @@ img.dblock {
   background-color: #008CBA;
 }
 
-.container:hover .overlay {
+.hover:hover .overlay {
   opacity: 1;
 }
 
