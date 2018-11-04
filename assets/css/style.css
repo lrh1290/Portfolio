@@ -427,7 +427,7 @@ img.dblock {
 
 .feedback-input {
 	opacity:0.9;
-	color:#0493bd;
+	color:#697179;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
   font-weight:400;
 	font-size: 18px;
@@ -447,15 +447,15 @@ img.dblock {
 .feedback-input:focus{
 	background: #fff;
 	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
+	border: 3px solid #697179;
+	color: #697179;
 	outline: none;
   padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
+	color:#697179;
+	border:#697179 solid 3px;
 }
 
 /* Icons ---------------------------------- */
@@ -534,7 +534,7 @@ input:focus, textarea:focus {
 .ease {
   border-top:3px #3c3c3c solid;
 	width: 0px;
-	height: 76px;
+	height: 2px;
 	background-color: #fbfbfb;
 	-webkit-transition: .3s ease;
 	-moz-transition: .3s ease;
