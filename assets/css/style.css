@@ -377,7 +377,7 @@ img.dblock {
   opacity: 1;
 }
 
-.text {
+.overlayText {
   color: white;
   font-size: 20px;
   position: absolute;
