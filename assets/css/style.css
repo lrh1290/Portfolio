@@ -7,15 +7,6 @@ body{
     background-color: #a0a9b3;
 }
 
-/* h1 {
-    color: white;
-    font-size: 3.0rem;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 h5 {
     position: static;
 }
