@@ -16,10 +16,6 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.progress {
-    color: #333;
-}
-
 h5 {
     position: static;
 }
@@ -413,16 +409,13 @@ img.dblock {
 }
 
 #form-div {
-	background-color:#3c3c3c;
+	background-color:#333;
 	padding-left:35px;
 	padding-right:35px;
 	padding-top:35px;
 	padding-bottom:50px;
-	width: 450px;
-	float: left;
-	left: 50%;
+	width: 100%;
 	position: absolute;
-	margin-left: -260px;
 }
 
 .feedback-input {
