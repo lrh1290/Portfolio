@@ -16,10 +16,6 @@ h1 {
     transform: translate(-50%, -50%);
 }
 
-.progress {
-    color: #333;
-}
-
 h5 {
     position: static;
 }
