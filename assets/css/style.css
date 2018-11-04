@@ -377,7 +377,7 @@ img.dblock {
   opacity: 1;
 }
 
-.overlayText {
+.text {
   color: white;
   font-size: 20px;
   position: absolute;
@@ -398,7 +398,7 @@ img.dblock {
 	text-align:center;
 }
 
-#text-feedback{
+#message-feedback{
 	width: 80%;
 	padding-left: 10%;
 	padding-right: 10%;
