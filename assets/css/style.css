@@ -512,7 +512,7 @@ input:focus, textarea:focus {
 	width: 100%;
 	border: #fbfbfb solid 4px;
 	cursor:pointer;
-	background-color: #3498db;
+	background-color: #697179;
 	color:white;
 	font-size:24px;
 	padding-top:22px;
@@ -524,11 +524,11 @@ input:focus, textarea:focus {
 
 #button-blue:hover{
 	background-color: rgba(0,0,0,0);
-	color: #0493bd;
+	color: #697179;
 }
 	
 .submit:hover {
-	color: #3498db;
+	color: #697179;
 }
 	
 .ease {
