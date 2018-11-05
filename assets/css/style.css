@@ -7,6 +7,10 @@ body{
     background-color: #a0a9b3;
 }
 
+h1 {
+    text-align: center;
+}
+
 h5 {
     position: static;
 }
