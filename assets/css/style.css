@@ -527,4 +527,7 @@ input:focus, textarea:focus {
 	#form-div{
 		width: 91%;
     }
+    #navbar a {
+        font-size: 11px;
+    }
 }
