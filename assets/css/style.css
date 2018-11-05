@@ -155,7 +155,7 @@ h1.ml8 {
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
 }
 
 #pantryNav {
@@ -396,7 +396,7 @@ img.dblock {
 	padding-right:35px;
 	padding-top:35px;
     padding-bottom:50px;
-    margin-bottom:4%;
+    margin-bottom:2.5%;
 	width: 100%;
 	position: absolute;
 }
@@ -527,5 +527,8 @@ input:focus, textarea:focus {
 @media only screen and (max-width: 580px) {
 	#form-div{
 		width: 91%;
+    }
+    .header-image{
+		height: 500px;
 	}
 }
