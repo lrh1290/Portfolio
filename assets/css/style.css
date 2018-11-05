@@ -153,8 +153,9 @@ h1.ml8 {
     /* float: left; */
     display: block;
     text-align: center;
+    margin-left: 50px;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 17px;
 }
 
 #pantryNav {
@@ -529,5 +530,6 @@ input:focus, textarea:focus {
     }
     #navbar a {
         font-size: 11px;
+        margin-left: 0px;
     }
 }
