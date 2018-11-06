@@ -9,7 +9,6 @@ body{
 
 h1 {
     text-align: center;
-	margin: 2.5rem;
 }
 
 h5 {
@@ -527,6 +526,10 @@ input:focus, textarea:focus {
 .submit:hover .ease{
   width:100%;
   background-color:white;
+}
+
+.navLocation{
+    margin-bottom: 3.0rem;
 }
 
 @media only screen and (max-width: 580px) {
