@@ -17,10 +17,11 @@ h5 {
 
 .skillsContainer {
     text-align: center;
-    background-color:#697179;
-    background: #dedede00;
+    background-color:#dedede00;
+    background: #697179; 
     color: white;
-    margin: 50px;
+    padding: 50px;
+    border-radius: 50%;
 }
 
 .header {
