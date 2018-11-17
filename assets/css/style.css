@@ -15,7 +15,21 @@ h5 {
     position: static;
 }
 
+.projects {
+    margin-bottom: 10px;
+}
+
 .skillsContainer {
+    text-align: center;
+    background-color:#dedede00;
+    background: #697179; 
+    color: white;
+    padding: 50px;
+    margin-top: 25px;
+    border-radius: 25%;
+}
+
+.schoolContainer {
     text-align: center;
     background-color:#dedede00;
     background: #697179; 
