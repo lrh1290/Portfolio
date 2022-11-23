@@ -19,17 +19,7 @@ h5 {
     margin-bottom: 10px;
 }
 
-.skillsContainer {
-    text-align: center;
-    background-color:#dedede00;
-    background: #697179; 
-    color: white;
-    padding: 50px;
-    margin-top: 25px;
-    border-radius: 25%;
-}
-
-.schoolContainer {
+.textContainer {
     text-align: center;
     background-color:#dedede00;
     background: #697179; 
